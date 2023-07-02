@@ -11,10 +11,10 @@ export function createEventCard(events) {
       <p class="info-item">
         <span>${events.name} </span>
       </p>
-      <p class="info-item">
+      <p class="info-item info-date">
         <span>${events.dates.start.localDate} </span>
       </p>
-      <p class="info-item">
+      <p class="info-item info-desc">
       <span>${events._embedded.venues[0].name},  ${events._embedded.venues[0].city.name}, ${events._embedded.venues[0].state.stateCode}</span>
     </p>
     </div>
@@ -26,11 +26,6 @@ export function createEventCard(events) {
   const cards = document.querySelectorAll('.event-card');
   cards.forEach(card => card.addEventListener('click', openEvent));
 }
-
-
-
-
-
 
 export function createEventInfo(event) {
   refs.contentEvent.innerHTML = '';
