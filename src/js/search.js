@@ -18,3 +18,6 @@ async function getFilteredData(value) {
 }
 
 
+moreBttn.addEventListener('click', function(){
+  getAllEvent();
+})

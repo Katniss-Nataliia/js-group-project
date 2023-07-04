@@ -7,8 +7,7 @@ const refs = {
     modal: document.querySelector("[data-modal]"),
 
     searchInput: document.querySelector(".search"),
-
-  
+    moreButtn: document.querySelector(".more-bttn"),
 }
 
 
