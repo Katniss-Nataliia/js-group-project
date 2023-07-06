@@ -25,7 +25,9 @@ export function createEventCard(events) {
 
   const cards = document.querySelectorAll('.event-card');
   cards.forEach(card => card.addEventListener('click', openEvent));
+
 }
+
 
 export function createEventInfo(event) {
   refs.contentEvent.innerHTML = '';
@@ -43,7 +45,6 @@ export function createEventInfo(event) {
   } else {
     price = `${event.priceRanges[0].min} - ${event.priceRanges[0].max} ${event.priceRanges[0].currency}`;
   }
-
 
   const eventInfo = `
   <div class="small__img">
