@@ -7,7 +7,6 @@ const eventApi = new EventApi();
 
 async function getData() {
   const data = await eventApi.getAllEvent();
-  console.log("fehmi", data);
 
   let maxPage;
 
