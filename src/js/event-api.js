@@ -1,10 +1,12 @@
 import { API_KEY, BASE_URL } from './api.js';
 import axios from 'axios';
+import refs from './referans.js';
+import Notiflix from 'notiflix';
 
 export default class EventApi {
   constructor() {
-    this.page = 1;
-    this.per_page = 10;
+    this.page = 0;
+    this.per_page = 16;
     this.id="";
     this.keyword = "";
     
@@ -18,7 +20,9 @@ export default class EventApi {
       );
       return response.data;
     } catch (error) {
-      console.error(error);
+     refs.gallery.innerHTML ="";
+     Notiflix.Notify.failure('Ooops...we could not find any matches');
+     console.log(error)
     }
   }
 
@@ -30,7 +34,9 @@ export default class EventApi {
       );
       return response.data;
     } catch (error) {
-      console.error(error);
+      
+      Notiflix.Notify.failure('Ooops...we could not find any matches');
+      console.log(error)
     }
   }
 }

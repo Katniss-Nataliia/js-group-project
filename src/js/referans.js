@@ -1,14 +1,16 @@
-
 const refs = {
-    gallery: document.querySelector(".gallery"),
-    contentEvent: document.querySelector(".content__event"),
+  gallery: document.querySelector('.gallery'),
+  contentEvent: document.querySelector('.content__event'),
+  
+  
+  closeModalBtn: document.querySelector('[data-modal-close]'),
+  modal: document.querySelector('[data-modal]'),
 
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
+  searchInput: document.querySelector('.search'),
 
-    searchInput: document.querySelector(".search"),
-    moreButtn: document.querySelector(".more-bttn"),
-}
 
+  paginationUl: document.querySelector('.pagination__buttons'),
+  paginationDiv :  document.querySelector('.pagination'),
+};
 
 export default refs;
