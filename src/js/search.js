@@ -7,7 +7,7 @@ const eventApi = new EventApi();
 
 refs.searchInput.addEventListener('keyup', e => {
   const value = e.target.value.trim();
-  activePage = 0;
+  let activePage = 0;
   getFilteredData(value, activePage);
 });
 
