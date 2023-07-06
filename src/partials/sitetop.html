@@ -1,43 +1,26 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
+
+<header>
+    
+  <a href="index.html"></a>
+  <picture>
+    <source media="(min-width:320px)" srcset="./images/logo-1-302w.png" />
+    <source media="(min-width:768px)" srcset="./images/logo-458w.png" />
+    <img
+      src="./images/logo-2-180w.png"
+      alt="rockband"
+      style="width: auto"
     />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <div class="header_section">
-      <section class="issue_image">
-        <picture>
-          <source media="(min-width:320px)" srcset="./images/logo-1-302w.png" />
-          <source media="(min-width:768px)" srcset="./images/logo-458w.png" />
-          <img
-            src="./images/logo-2-180w.png"
-            alt="rockband"
-            style="width: auto"
-          />
-        </picture>
-      </section>
+  </picture>
+  </a>
 
-      <h1 class="hero_text">
-        FIND BEST EVENTS <br />
-        AROUND THE WORLD.
-      </h1>
-
-      <svg class="icon icon-search-icon" width="12px" height="12px">
-        <use xlink:href="#icon-search-icon"></use>
-      </svg>
-    </div>
-    <svg class="icon icon-Vector-5" width="6px" height="9px">
-      <use xlink:href="#icon-Vector-5"></use>
-    </svg>
-  </body>
-</html>
+  <h1 class="title">FIND BEST EVENTS <br> AROUND THE WORLD</h1>
+ 
+  
+  <div class="search-wrap">
+  <form action="" class="search-form">
+      <input type="text" placeholder="Start Searching" class="search" name="searchQuery">
+      <button type="submit" class="submit-bttn">Search</button>
+  </form>
+</div>
+  
+</header>

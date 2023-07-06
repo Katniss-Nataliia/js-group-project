@@ -38,3 +38,4 @@ export async function getFilteredData(search, activePage) {
   refs.gallery.innerHTML = '';
   data._embedded.events.map(createEventCard);
 }
+
