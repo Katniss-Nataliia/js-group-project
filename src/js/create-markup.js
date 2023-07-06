@@ -6,7 +6,7 @@ export function createEventCard(events) {
 
   const eventInfo = `
     <div class="event-card" data-id="${events.id}">
-      <div class ="img-container"><img class="gallery__image" src="${events.images[0].url}" alt="${events.name}" width="450" loading="lazy" /> </div>
+      <img class="gallery__image" src="${events.images[0].url}" alt="${events.name}" width="450" loading="lazy" />
       <div class="info">
       <p class="info-item">
         <span>${events.name} </span>
