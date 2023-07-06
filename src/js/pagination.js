@@ -27,7 +27,7 @@ export function paginationEvent(maxPage, activePage, search) {
           return;
         }
 
-        btnValue = Number(e.target.textContent);
+        const btnValue = Number(e.target.textContent);
 
         getFilteredData(search, btnValue);
       })
